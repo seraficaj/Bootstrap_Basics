@@ -28,13 +28,13 @@ The fastest way to include Bootstrap and its components in your project is to us
 
 Copy and paste this `<link>` tag into your `<head>` before all other stylesheets to load our css.
 
-```
+```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 ```
 
 Many Bootstrap components require JavaScript to render and animate themselves properly. Previous versions of Bootstrap before Bootstrap v.5.0 used relied on jQuery. In this lesson, we're using Bootstrap 5, the latest version as of writing. This script tag bundles all JavaScript dependencies together and can be placed near the end of the of the closing `<body>` tag.
 
-```
+```html
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
 ```
 
@@ -52,7 +52,7 @@ Bootstrap uses Flexbox and Grid underneath the hood to create its own 12-column 
 
 To begin using Bootstrap's layout system, we first need a `div` with a class of `container`. Inside this div, we also need a div with a class of `row`.
 
-```
+```html
 <div class="container">
     <div class="row">
     </div>
@@ -65,7 +65,7 @@ You can bring in Bootstrap Components into your project by selecting what you ne
 
 Here is a Bootstrap Card:
 
-```
+```html
 <div class="card">
   <div class="card-body">
     <h5 class="card-title">Card title</h5>
@@ -81,22 +81,11 @@ Copy and paste two of these card elements INSIDE the `div` with class `row` we m
 
 So, inside your `body` tag, your HTML should look like this:
 
-```
+```html
  <div class="container">
       <div class="row">
-        <div class="card col-md-6">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-        <div class="card col-md-6">
+        <div class="col-md-6">
+          <div class="card">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
@@ -106,6 +95,21 @@ So, inside your `body` tag, your HTML should look like this:
               </p>
               <a href="#" class="card-link">Card link</a>
               <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the
+                  bulk of the card's content.
+                </p>
+                <a href="#" class="card-link">Card link</a>
+                <a href="#" class="card-link">Another link</a>
+              </div>
             </div>
           </div>
       </div>
@@ -144,7 +148,7 @@ Many complicated Bootstrap components rely on JavaScript because they are animat
 
 You can bring in a navbar from Bootstrap's component library like this. Notice the many nested divs and bootstrap classes on several elements.
 
-```
+```html
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
@@ -220,6 +224,8 @@ Pill Shape:
 
 If you're curious about different ways you can use Bootstrap to quickly make several popular web page layouts, you can use [Start Bootstrap](https://startbootstrap.com/snippets) to find helpful Bootstrap Snippets. Beware of their portfolio templates! They're quite cliche lately! Otherwise, this is a great resource for getting inspiration and helpful hacks!
 
+- Pick a layout and talk about how to recreate it!
+
 
 ## The Bootstrap Default Look
 
@@ -230,6 +236,10 @@ In addition to using your own CSS, several devs have published Bootstrap Themes 
 When you look for Bootstrap Themes, make sure it is compatible with the version of Bootstrap you are using! As of writing, most themes are for Bootstrap V. 4!
 
 One such site is Creative Tim: https://creative-tim.com
+
+BootStrap Made has several themes for Bootstrap 5: https://bootstrapmade.com/bootstrap-5-templates/
+
+Pick a Bootstrap Theme and overlay it on your page!
 
 
 ## Follow Up
