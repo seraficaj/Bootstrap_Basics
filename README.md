@@ -1,5 +1,12 @@
 # BOOTSTRAP BASICS
 
+## Prerequisites
+- strong understanding of CSS classes, selectors, and styling
+- familiarity with advanced CSS layout techniques using:
+  - Flexbox
+  - CSS Grid Layout
+- familiarity with manipulating the DOM with JavaScript
+
 ## Objectives
 
 By the end of this lesson, developers should be able to:
@@ -31,6 +38,8 @@ Copy and paste this `<link>` tag into your `<head>` before all other stylesheets
 ```html
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 ```
+
+You can also download Bootstrap as a zipped folder or npm package if you want to directly download all the files into your project.
 
 Many Bootstrap components require JavaScript to render and animate themselves properly. Previous versions of Bootstrap before Bootstrap v.5.0 used relied on jQuery. In this lesson, we're using Bootstrap 5, the latest version as of writing. This script tag bundles all JavaScript dependencies together and can be placed near the end of the of the closing `<body>` tag.
 
@@ -224,20 +233,24 @@ Pill Shape:
 
 If you're curious about different ways you can use Bootstrap to quickly make several popular web page layouts, you can use [Start Bootstrap](https://startbootstrap.com/snippets) to find helpful Bootstrap Snippets. Beware of their portfolio templates! They're quite cliche lately! Otherwise, this is a great resource for getting inspiration and helpful hacks!
 
-- Pick a layout and talk about how to recreate it!
+- ACTIVITY: Pick a layout from this page: https://startbootstrap.com/snippets and talk about how to recreate itusing Bootstrap!
 
 
 ## The Bootstrap Default Look
 
-Once you start using Bootstrap, you might start to notice how prevalent it is on the Internet. In fact, it is an inside joke of how common this look is on Start-up and Corporate Websites: https://www.dagusa.com/
+Once you start using Bootstrap, you might start to notice how prevalent it is on the Internet. In fact, it is almost an inside joke of how common the Bootstrap aesthetic is on Start-up and Corporate Websites: https://www.dagusa.com/
 
-In addition to using your own CSS, several devs have published Bootstrap Themes that overlay on top of Bootstrap's default styles to give a more customized look. 
+In addition to using your own CSS, several devs have published Bootstrap Themes that overlay on top of Bootstrap's default styles to create a more customized look. 
 
 When you look for Bootstrap Themes, make sure it is compatible with the version of Bootstrap you are using! As of writing, most themes are for Bootstrap V. 4!
 
 One such site is Creative Tim: https://creative-tim.com
 
 BootStrap Made has several themes for Bootstrap 5: https://bootstrapmade.com/bootstrap-5-templates/
+
+MDBootstrap is another popular Bootstrap theme with several custom components: https://mdbootstrap.com/docs/standard/
+
+Bootswatch has several free custom themes: https://bootswatch.com/
 
 Pick a Bootstrap Theme and overlay it on your page!
 
